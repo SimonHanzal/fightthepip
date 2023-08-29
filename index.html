@@ -1,0 +1,526 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta name="generator" content="Hugo 0.111.3">
+
+    <meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+<script>
+    (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=GTM-000000' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-000000');
+</script>
+
+
+<title></title>
+<style>
+     
+    .rad-fade-in {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in.rad-animate {
+        animation-name: rad-fade-in;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+     
+    .rad-fade-in-long {
+        will-change: opacity, transform;
+        animation-name: rad-fade-in-long-fallback;
+        animation-duration: 8s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long-fallback {
+        0% {
+            opacity: 0;
+        }
+
+        75% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+    }
+
+    .fonts-loaded .rad-fade-in-long.rad-animate {
+        animation-name: rad-fade-in-long;
+        animation-duration: 2s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-fade-in-long {
+        0% {
+            opacity: 0;
+        }
+
+        20% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+     
+    .rad-fade-down {
+        will-change: opacity, transform;
+        animation-name: rad-fade-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform: translateY(-30px);
+    }
+
+    @keyframes rad-fade-down-fallback {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        75% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .fonts-loaded .rad-fade-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    .fonts-loaded .rad-fade-down.rad-animate {
+        animation-name: rad-fade-down;
+        animation-duration: 1.1s;
+    }
+
+    @keyframes rad-fade-down {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+     
+    .rad-scale-down {
+        will-change: opacity, transform;
+        animation-name: rad-scale-down-fallback;
+        animation-duration: 5s;
+        animation-fill-mode: both;
+        transform-origin: 50% 0;
+    }
+
+    @keyframes rad-scale-down-fallback {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        75% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+
+    .fonts-loaded .rad-scale-down.rad-waiting {
+        animation-name: none;
+        opacity: 0;
+        transform: scaleY(0.95);
+    }
+
+    .fonts-loaded .rad-scale-down.rad-animate {
+        animation-name: rad-scale-down;
+        animation-duration: 1.1s;
+        animation-fill-mode: both;
+    }
+
+    @keyframes rad-scale-down {
+        0% {
+            opacity: 0;
+            transform: scaleY(0.95);
+        }
+
+        100% {
+            opacity: 1;
+            transform: scaleY(1);
+        }
+    }
+</style>
+
+
+<link rel="stylesheet" href="https://raditian-hugo.radity.com/css/main.css"/>
+
+<link rel="stylesheet" href="https://raditian-hugo.radity.com/css/rad-icons.css"/>
+
+<link rel="stylesheet" href="https://raditian-hugo.radity.com/css/custom.css"/>
+
+
+    
+
+
+</head>
+
+<body>
+
+	<header class="header fixed-top rad-animation-group" id="header">
+  <div class="container rad-fade-in">
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+      <a class="navbar-brand" href="https://raditian-hugo.radity.com/">
+        <span></span>
+        <span></span>
+        
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent, #header"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-lg-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://raditian-hugo.radity.com/">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#education">SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">CONTACT US</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+	
+	
+<section class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
+  <div class="rad-showcase__bg">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="https://raditian-hugo.radity.com/logo_1.webp"
+      data-srcset="https://raditian-hugo.radity.com/logo_1.webp 1x, https://raditian-hugo.radity.com/logo_1.webp 2x"
+      alt="frustrated PIP employee"
+    />
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-8 col-lg-7 col-xl-6">
+        <h1 class="display-1">
+          Fight the PIP!
+          <br />
+          <span
+            ></span
+          >
+        </h1>
+        <p class="lead">
+          Learn the secrets to navigate a performance improvement plan
+        </p>
+        <a
+          href="http://localhost:1313/#contact"
+          class="btn btn-primary"
+        >
+          <i class="icon-mail-fill"></i>
+          BOOK A FREE CONSULTATION
+        </a>
+      </div>
+    </div>
+    <div class="row platform-links">
+      <div class="col-12">
+        
+      </div>
+    </div>
+  </div>
+  <div class="rad-showcase__bg rad-showcase__bg--mobile">
+    <img
+      class="lozad img-responsive"
+      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+      data-src="https://raditian-hugo.radity.com/logo_1.webp"
+      alt="frustrated PIP employee"
+    />
+  </div>
+</section>
+
+
+	
+	
+<section class="section rad-animation-group pb-0" id="about">
+  <div class="container rad-fade-down">
+    <div class="row d-flex flex-column-reverse flex-md-row">
+      <div class="my-auto my-auto">
+        <h2 style="text-align: center;">About Us</h2>
+        <hr>
+        <p class="lead">
+           <h3>My story of being forced to place an employee on a sham PIP</h3> <p class='lead'> As a newly appointed engineering manager at Amazon, I encountered a challenging situation when I faced pressure from the leadership to place one of my direct reports on a sham performance improvement plan. Caught between a rock and a hard place, I tried to subtly guide my direct report towards a better outcome, but he did not grasp my hints. This particular incident made me realize the importance of offering support during critical moments in someone's career like going through a performance improvement plan. </p> <p class='lead'> In my subsequent professional journey, I have had the privilege of assisting numerous acquaintances in navigating performance improvement plan challenges, helping them make strategic moves to attain more favorable outcomes. </p> <p class='lead'> As an experienced engineering manager, I look forward to sharing valuable insights, and provide coaching, guidance and support to to help those facing career challenges, such as  performance improvement plans, to reach a more favorable outcome. </p>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	
+	
+<section class="section rad-animation-group pb-0" id="education">
+  <div class="container rad-fade-down">
+    <div class="row d-flex flex-column-reverse flex-md-row">
+      <div class="col-12 my-auto my-auto">
+        <h2 style="text-align: center;">Services</h2>
+        <hr>
+      </div>
+      <div class="col-6">
+        <p class="lead">
+           <h3>Career Coaching: Navigate the PIP</h3> <p>As a former SDM at Amazon, I'm very familiar with both the repercussions of going through a PIP, and strategies to best navigate a performance improvement plan. </p><p>Whether you're concerned about losing immigration status or a career gap in your resume, I can provide personalized guidance tailored to your individual circumstances. I'll help you  understand your rights, and make  strategic moves to  reach the most favorable outcome possible. Today's setback is just an opportunity for a comeback </p><h3>Interview Prep</h3> <p>I've conducted many interviews in my career for both engineers and engineering managers. Besides, I've personally cracked both,  engineering and management interviews at top companies like Google, Facebook, LinkedIn, Amazon, Uber etc. </p><p>Much like going to the gym, the biggest challenge to interview prep is getting started. Reach out for 1:1 interview coaching sessions. </p><h3>Career Consultation</h3> <p>I'm an experienced software leader. Feel free to catchup with me for a quick chat on your career questions, whether you're trying to break into the industry or want to make a career transition, like moving from software engineering to product management or engineering leadership roles. </p>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+	
+	
+
+	
+	
+
+	
+	
+
+	
+	
+<section id="contact" class="section section--contact pt-0">
+    <div class="container">
+        <div class="contact">
+            <h2 style="text-align: center;">Frequently Asked Questions</h2>
+            <hr>
+            <div style="text-align: center;">
+                <p>Scroll down to contact</p>
+                <details>
+                    <summary>I'm facing a PIP, and I don't know what to do. How will you help me?</summary>
+                    <p>I'm experienced with the resources like laws and company policies most of us aren't familiar with. I will coach you on how you can engender a more favorable outcome for yourself. I'll also clarify any questions you may have, help you focus your energy where it matters, take control of your stress and stay productive. </p>
+                </details>
+                <details>
+                    <summary>I'm unable to get started with preparing for interviews. Can you help me?</summary>
+                    <p>I've cracked many coding and managerial interviews. I can provide 1-1 coaching to overcome the resistance and get you to speed. </p>
+                </details>  
+                <details>
+                    <summary>What is your background?</summary>
+                    <p>I've worked for top tech companies of Silicon Valley (often known as FAANG++) as a software engineer and engineering manage for over a decade.  I've used my expertise to help many many acquaintances navigate performance improvement plans and subsequently crack job interviews, making their PIPs a comeback and not a setback. </p>
+                </details>  
+                <details>
+                    <summary>What is the cost?</summary>
+                    <p>My aim is to help those going though a difficult time. I charge a token fee of $50 for a 30 minute consultation.</p>
+                    <p>To maintain anonymity for both of us, you can buy me an Amazon gift card.</p>
+                </details>                  
+            </div>
+            <h2 style="text-align: center;">Contact</h2>
+            <hr>
+            <div class="row pt-2">
+                <div class="col-12 col-lg-7">
+                    <form action="#" method="POST">
+                        <div class="row">
+                            <div class="col-12 col-sm-12">
+                                <input type="text" name="" id="full_name"
+                                       placeholder="Name"/>
+                            </div>
+                            <div class="col-12 col-sm-12">
+                                <input type="text" name="" id="email"
+                                       placeholder="Email*"/>
+                            </div>
+                            <div class="col-12 col-sm-12">
+                                <input type="text" name="" id="phone"
+                                       placeholder="Phone"/>
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <textarea name="" id="message"
+                                          cols="30" rows="3" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="row pt-4">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">
+                                    <i class="icon-mail-fill"></i>
+                                    Send
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-12 col-lg-5 contact__info">
+                    <h4></h4>
+                    <span></span>
+                    <h4>You can email us at</h4>
+                    <span>info@thepip.fyi</a></span>
+                    <h4></h4>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+	
+	
+
+	
+
+	<footer class="footer">
+  <div class="container">
+    <div class="footer__left">
+      <div class="footer__copy">
+      </div>
+    </div>
+    <div class="footer__links" style="color: gray">
+      © All rights reserved.
+    </div>
+    <div class="footer__right">
+    </div>
+  </div>
+</footer>
+
+    <script src='https://raditian-hugo.radity.com/js/rad-animations.js'></script>
+<script src='https://raditian-hugo.radity.com/js/library/lozad.min.js'></script>
+<script>
+  window.addEventListener("load", function() {
+    var observer = window.lozad(".lozad", {
+      rootMargin: window.innerHeight / 2 + "px 0px",
+      threshold: 0.01
+    }); 
+    observer.observe();
+  });
+</script>
+<script src='https://raditian-hugo.radity.com/js/library/jquery-3.3.1.slim.min.js'></script>
+<script src='https://raditian-hugo.radity.com/js/library/bootstrap.min.js'></script>
+<script src='https://raditian-hugo.radity.com/js/sticky-header.js'></script>
+<script src='https://raditian-hugo.radity.com/js/library/smooth-scroll.polyfills.min.js'></script>
+<script src='https://raditian-hugo.radity.com/js/library/fontfaceobserver.js'></script>
+<script>
+  (function(w) {
+    
+    if (w.document.documentElement.className.indexOf("fonts-loaded") > -1) {
+      return;
+    }
+    var fontA = new w.FontFaceObserver("Inter", {
+      weight: 300
+    });
+    var fontB = new w.FontFaceObserver("Inter", {
+      weight: 400
+    });
+    var fontC = new w.FontFaceObserver("Inter", {
+      weight: 500
+    });
+    var fontD = new w.FontFaceObserver("Inter", {
+      weight: 600
+    });
+    var fontE = new w.FontFaceObserver("Inter", {
+      weight: 700
+    });
+    var fontF = new w.FontFaceObserver("Inter", {
+      weight: 900
+    });
+    w.Promise.all([fontA.load(), fontC.load(), fontF.load()]).then(function() {
+      w.document.documentElement.className += " fonts-loaded";
+    });
+  })(this);
+</script>
+<script>
+  const scroll = new SmoothScroll('a[href*="#"]');
+    $('a.nav-link').on('click', () => {
+      const navbar = $('.navbar-collapse');
+      if (navbar && navbar.hasClass('show')) {
+        $('.navbar-toggler').click();
+      }
+    })
+</script>
+
+</body>
+
+</html>
